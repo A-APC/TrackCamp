@@ -1,0 +1,3 @@
+# GitHub Pages settings: files listed here are not published to the website.
+exclude:
+  - CLAUDE.md
