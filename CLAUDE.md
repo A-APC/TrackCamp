@@ -21,4 +21,5 @@ Anything pushed to `main` goes live on the public site, so:
 
 - The only contact email is `elitepc.coaching@gmail.com`. Don't add any other address.
 - The first camp was 3 days. The upcoming camp is 2 days.
-- Bookings go through Acuity Scheduling. The "Pay Your Way" option takes Venmo, Cash App, and Zelle.
+- Camp registration (every Register button and the 1-Day/2-Day pass buttons on `index.html`) goes to the Jotform at https://pci.jotform.com/form/263176564795068. The form also collects the waiver, medical info, and pass choice.
+- Private and group coaching bookings on `coaching.html` go through Acuity Scheduling (and Calendly for small groups). The "Pay Your Way" option takes Venmo, Cash App, and Zelle.
