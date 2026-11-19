@@ -301,6 +301,14 @@
     button.nav-hamburger { background:none; border:none; }
     .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
   </style>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MW5Z6PEV12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MW5Z6PEV12');
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -373,7 +381,7 @@
       <div class="recap-video-col">
         <div class="recap-video-frame">
           <iframe
-            src="https://www.youtube-nocookie.com/embed/YDaiIKIwZp8?rel=0&modestbranding=1"
+            src="https://www.youtube-nocookie.com/embed/YDaiIKIwZp8?rel=0&modestbranding=1&enablejsapi=1"
             title="The Everything Track Camp recap"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -699,6 +707,20 @@
     document.querySelectorAll('a[target="_blank"]').forEach(a => {
       a.insertAdjacentHTML('beforeend', '<span class="sr-only"> (opens in new tab)</span>');
       if (!a.rel) a.rel = 'noopener noreferrer';
+    });
+  </script>
+  <script>
+    // Analytics: record clicks on registration, booking and contact links (no personal details are sent)
+    document.addEventListener('click', e => {
+      const a = e.target.closest('a');
+      if (!a) return;
+      const href = a.getAttribute('href') || '';
+      const label = a.textContent.replace('(opens in new tab)', '').trim().replace(/\s+/g, ' ');
+      if (href.includes('jotform.com/form/263176564795068')) gtag('event', 'register_click', { button_label: label });
+      else if (href.includes('acuityscheduling.com') || href.includes('calendly.com')) gtag('event', 'coaching_book_click', { button_label: label });
+      else if (href.startsWith('mailto:')) gtag('event', 'contact_click', { method: 'email' });
+      else if (href.startsWith('tel:')) gtag('event', 'contact_click', { method: 'phone' });
+      else if (href.includes('instagram.com')) gtag('event', 'contact_click', { method: 'instagram' });
     });
   </script>
 </body>
