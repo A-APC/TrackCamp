@@ -5,7 +5,7 @@ Static website for Caleb Foster Elite Coaching, published with GitHub Pages from
 - `index.html`: The Everything Track Camp (camp info, schedule, coaches, registration)
 - `coaching.html`: private 1-on-1 and group coaching (pricing, booking, contact form)
 - Plain HTML/CSS/JS with styles inline in each page. No framework or build step.
-- Project skills live in `.claude/skills/` (design, SEO, performance, conversion, pricing, Stripe).
+- Project skills live in `.claude/skills/` (design, SEO, performance, conversion, pricing, Stripe, and marketing: analytics, copywriting, social, popups, email, referrals, paid ads, psychology, forms).
 
 ## How to make changes
 
