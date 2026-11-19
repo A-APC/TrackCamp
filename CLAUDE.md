@@ -7,6 +7,10 @@ Static website for Caleb Foster Elite Coaching, published with GitHub Pages from
 - Plain HTML/CSS/JS with styles inline in each page. No framework or build step.
 - Project skills live in `.claude/skills/` (design, SEO, performance, conversion, pricing, Stripe, and marketing: analytics, copywriting, social, popups, email, referrals, paid ads, psychology, forms).
 
+## Marketing plan
+
+The marketing plan lives in a private Claude doc, not in this repository: https://claude.ai/artifact/Wio6v3TS5RuPfaNfSptm73. Read it with the docs tools before any marketing work, and keep its status line current. This repository is public, so never copy the plan's contents (prices, budgets, strategy) into files here.
+
 ## How to make changes
 
 Anything pushed to `main` goes live on the public site, so:
