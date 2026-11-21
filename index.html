@@ -120,6 +120,10 @@
     .expect-step-title { font-family:'Bebas Neue',sans-serif; font-size:2.4rem; font-weight:400; letter-spacing:.04em; text-transform:uppercase; line-height:1; margin-bottom:.7rem; }
     .expect-step-desc { font-size:1rem; color:rgba(245,242,236,.65); line-height:1.8; }
     .expect-connector { width:2px; height:2rem; background:rgba(212,168,32,.25); margin-left:25px; }
+    .expect-verse { margin:0; height:100%; display:flex; flex-direction:column; justify-content:center; gap:.8rem; padding:1.8rem; background:radial-gradient(circle at 25% 20%, rgba(212,168,32,.16), rgba(212,168,32,0) 65%), var(--offblack); }
+    .expect-verse-label { font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); }
+    .expect-verse-text { font-family:'Bebas Neue',sans-serif; font-size:2rem; line-height:1.05; letter-spacing:.02em; color:var(--white); }
+    .expect-verse-ref { font-style:normal; font-size:.85rem; letter-spacing:.08em; color:rgba(245,242,236,.65); }
 
     .expect-days { display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; max-width:760px; margin:0 auto; }
     .expect-day { background:var(--offblack); border:1px solid rgba(255,255,255,.06); padding:1.8rem; transition:border-color .2s; }
@@ -138,6 +142,9 @@
       .expect-step-desc { font-size:.95rem; line-height:1.7; }
       .expect-step-num { width:42px; height:42px; font-size:1.3rem; }
       .expect-connector { height:1.6rem; margin-left:20px; }
+      .expect-step-media--verse { aspect-ratio:auto; }
+      .expect-verse { padding:1.4rem; }
+      .expect-verse-text { font-size:1.6rem; }
     }
 
     /* COACHES */
@@ -423,13 +430,28 @@
       <div class="reveal" style="text-align:center; margin-bottom:3.5rem;">
         <p class="section-label">The Experience</p>
         <h2 class="section-title">What to <span style="color:var(--gold)">Expect</span></h2>
-        <p style="margin-top:1rem; font-size:1.05rem; color:rgba(245,242,236,.65); max-width:600px; margin-left:auto; margin-right:auto; line-height:1.8;">Every day runs the same proven structure — a dynamic warmup, three rotating event stations, and a group game to close it out. All energy.</p>
+        <p style="margin-top:1rem; font-size:1.05rem; color:rgba(245,242,236,.65); max-width:600px; margin-left:auto; margin-right:auto; line-height:1.8;">Every day runs the same proven structure — a purpose for the day, a dynamic warmup, two rotating event stations, and a group game with a day recap to close it out. All energy.</p>
       </div>
 
       <!-- Daily Flow -->
       <div class="expect-flow">
         <div class="expect-step step-reveal">
           <div class="expect-step-num">1</div>
+          <div class="expect-step-content">
+            <div class="expect-step-title">Purpose of the Day</div>
+            <p class="expect-step-desc">Every day starts with purpose. We open with a Bible verse and a theme for the day, talk through what it means, and set the expectation for how athletes will live it out — in their effort, their attitude, and how they treat each other on the track.</p>
+          </div>
+          <div class="expect-step-media expect-step-media--verse">
+            <blockquote class="expect-verse">
+              <div class="expect-verse-label">Today's Theme · Endurance</div>
+              <p class="expect-verse-text">“Let us run with endurance the race that is set before us.”</p>
+              <cite class="expect-verse-ref">Hebrews 12:1</cite>
+            </blockquote>
+          </div>
+        </div>
+        <div class="expect-connector step-reveal"></div>
+        <div class="expect-step step-reveal">
+          <div class="expect-step-num">2</div>
           <div class="expect-step-content">
             <div class="expect-step-title">Warmup</div>
             <p class="expect-step-desc">Every session kicks off with a group jog and dynamic drills led by Coach Foster to get athletes activated, focused, and competition-ready.</p>
@@ -440,10 +462,10 @@
         </div>
         <div class="expect-connector step-reveal"></div>
         <div class="expect-step step-reveal">
-          <div class="expect-step-num">2</div>
+          <div class="expect-step-num">3</div>
           <div class="expect-step-content">
-            <div class="expect-step-title">3 Rotating Event Stations</div>
-            <p class="expect-step-desc">Athletes rotate through 3 different event stations — each one a different discipline. Small groups of up to 10 keep coaching focused and reps high. Every station, every day, is a different event so athletes experience the full range of track and field.</p>
+            <div class="expect-step-title">2 Rotating Event Stations</div>
+            <p class="expect-step-desc">Athletes rotate through 2 different event stations — each one a different discipline. Small groups of up to 10 keep coaching focused and reps high. Each day brings new events, so athletes experience the full range of track and field.</p>
           </div>
           <div class="expect-step-media">
             <img src="expect-stations.jpg" alt="Coach teaching pole vault technique to a small group" loading="lazy">
@@ -451,10 +473,10 @@
         </div>
         <div class="expect-connector step-reveal"></div>
         <div class="expect-step step-reveal">
-          <div class="expect-step-num">3</div>
+          <div class="expect-step-num">4</div>
           <div class="expect-step-content">
-            <div class="expect-step-title">Group Game</div>
-            <p class="expect-step-desc">Every day ends with a competitive group game that gets everyone involved — The perfect way to close out a hard day of training with team energy and a lot of fun.</p>
+            <div class="expect-step-title">Group Game &amp; Day Recap</div>
+            <p class="expect-step-desc">Every day ends with a competitive group game that gets everyone involved, then we come back together to recap the day — what we learned on the track and where we saw the day's theme lived out.</p>
           </div>
           <div class="expect-step-media">
             <img src="expect-game.jpg" alt="Athletes putting hands in around a relay baton" loading="lazy">
@@ -465,20 +487,18 @@
       <!-- Day by Day -->
       <div class="expect-days reveal stagger">
         <div class="expect-day">
-          <div class="expect-day-label">Day 1</div>
+          <div class="expect-day-label">Day 1: Rhythm and Technique</div>
           <div class="expect-day-events">
             <span class="expect-event-tag">Long Jump</span>
-            <span class="expect-event-tag">Sprints</span>
-            <span class="expect-event-tag">High Jump</span>
+            <span class="expect-event-tag">Hurdles</span>
           </div>
           <div class="expect-day-game">🎮 Game: Shoe Pile Scramble or Fox-Tails</div>
         </div>
         <div class="expect-day">
-          <div class="expect-day-label">Day 2</div>
+          <div class="expect-day-label">Day 2: Speed and Power</div>
           <div class="expect-day-events">
-            <span class="expect-event-tag">Hurdles</span>
-            <span class="expect-event-tag">Triple Jump</span>
-            <span class="expect-event-tag">Turbo Jav</span>
+            <span class="expect-event-tag">Speed &amp; Blocks</span>
+            <span class="expect-event-tag">Shot Put</span>
           </div>
           <div class="expect-day-game">🎮 Game: Tic-Tac-Toe Relay Tournament</div>
         </div>
@@ -527,7 +547,7 @@
         </div>
         <div class="camp-detail-card">
           <div class="camp-detail-label">Location</div>
-          <div class="camp-detail-value">State-of-the-Art Outdoor Stadium</div>
+          <div class="camp-detail-value">TBA</div>
         </div>
         <div class="camp-detail-card">
           <div class="camp-detail-label">Open To</div>
