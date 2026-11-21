@@ -17,7 +17,7 @@ Pick up here in a new session. Remove items as they're finished.
 
 - **Prizes section (drafted, not live):** an Apple-style sideways-scrolling row of 5 prize cards (Gift Card, Camp Beanie, Hoodie, Backpack, Gift Card), saved in `drafts/prizes-section.html`. It goes in `index.html` directly before the "Your Host" section. Before publishing, the owner needs to give: how athletes win the prizes (the "daily games" line is a guess), the two gift card amounts, and optionally real photos to replace the gold icons. The `drafts/` folder is excluded from the website in `_config.yml`.
 - **Camp times and location:** not set yet; the Time and Location cards on `index.html` say TBA.
-- **Events per day:** the owner hasn't decided which 2 events run on Day 1 and Day 2. The Day 1 and Day 2 boxes under "What to Expect" say "2 Events · Announced Soon" until then; the games listed there are unchanged.
+- **Events per day:** decided at the event-group level: Day 1 = Jumps and Hurdles, Day 2 = Sprints and Throws (shown in the Day 1 and Day 2 boxes under "What to Expect"). Which specific jump and throw (e.g. long jump, Turbo Jav) isn't set yet.
 - **Jotform:** consider adding the dates to the "How many days" question (Day 1: Fri Jan 8, Day 2: Sat Jan 9).
 - **Completed-registration tracking:** the owner is setting up a Zapier zap ("Send measurement events in Google Analytics 4 for new submissions in Jotform") with event name `registration_complete`. An alternative is a `thank-you.html` page on the site that Jotform redirects to.
 - **Privacy notice:** suggested a short footer note that the site uses Google Analytics.
