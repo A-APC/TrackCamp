@@ -35,7 +35,8 @@ Anything pushed to `main` goes live on the public site, so:
 ## Business facts to keep consistent
 
 - The only contact email is `elitepc.coaching@gmail.com`. Don't add any other address.
-- The first camp was 3 days. The upcoming camp is 2 days, Friday and Saturday, January 8–9, 2027, for ages 12–17. Camp times are not set yet (the Time card says TBA).
+- The first camp was 3 days. The upcoming camp is 2 days, Friday and Saturday, January 8–9, 2027, for ages 12–17. Camp times and location are not set yet (the Time and Location cards say TBA).
+- Each camp day has 4 parts, shown under "What to Expect": 1. Purpose of the Day (a Bible verse and theme, and how athletes should live it out), 2. Warmup, 3. 2 Rotating Event Stations, 4. Group Game & Day Recap. The verse card in step 1 shows Hebrews 12:1 as an example.
 - Camp registration (every Register button and the 1-Day/2-Day pass buttons on `index.html`) goes to the Jotform at https://pci.jotform.com/form/263176564795068. The form also collects the waiver, medical info, and pass choice.
 - Private and group coaching bookings on `coaching.html` go through Acuity Scheduling (and Calendly for small groups). The "Pay Your Way" option takes Venmo, Cash App, and Zelle.
 - Google Analytics 4 Measurement ID is `G-MW5Z6PEV12`, installed in the `<head>` of both pages. A click listener at the end of each page sends `register_click`, `coaching_book_click` and `contact_click` events, and the coaching contact form sends `contact_submit`. Keep these when editing links, and never send names, emails or other personal details to Analytics.
