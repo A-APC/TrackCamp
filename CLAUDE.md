@@ -17,7 +17,6 @@ Pick up here in a new session. Remove items as they're finished.
 
 - **Prizes section (drafted, not live):** an Apple-style sideways-scrolling row of 5 prize cards (Gift Card, Camp Beanie, Hoodie, Backpack, Gift Card), saved in `drafts/prizes-section.html`. It goes in `index.html` directly before the "Your Host" section. Before publishing, the owner needs to give: how athletes win the prizes (the "daily games" line is a guess), the two gift card amounts, and optionally real photos to replace the gold icons. The `drafts/` folder is excluded from the website in `_config.yml`.
 - **Camp times and location:** not set yet; the Time and Location cards on `index.html` say TBA.
-- **Events per day:** decided at the event-group level: Day 1 = Jumps and Hurdles, Day 2 = Sprints and Throws (shown in the Day 1 and Day 2 boxes under "What to Expect"). Which specific jump and throw (e.g. long jump, Turbo Jav) isn't set yet.
 - **Jotform:** consider adding the dates to the "How many days" question (Day 1: Fri Jan 8, Day 2: Sat Jan 9).
 - **Completed-registration tracking:** the owner is setting up a Zapier zap ("Send measurement events in Google Analytics 4 for new submissions in Jotform") with event name `registration_complete`. An alternative is a `thank-you.html` page on the site that Jotform redirects to.
 - **Privacy notice:** suggested a short footer note that the site uses Google Analytics.
@@ -38,6 +37,7 @@ Anything pushed to `main` goes live on the public site, so:
 - The only contact email is `elitepc.coaching@gmail.com`. Don't add any other address.
 - The first camp was 3 days. The upcoming camp is 2 days, Friday and Saturday, January 8–9, 2027, for ages 12–17. Camp times and location are not set yet (the Time and Location cards say TBA).
 - Each camp day has 4 parts, shown under "What to Expect": 1. Purpose of the Day (a Bible verse and theme, and how athletes should live it out), 2. Warmup, 3. 2 Rotating Event Stations, 4. Group Game & Day Recap. The verse card in step 1 shows Hebrews 12:1 as an example.
+- Events (2 stations a day): Day 1 = Long Jump and Hurdles; Day 2 = Speed & Blocks (sprints) and Shot Put.
 - Camp registration (every Register button and the 1-Day/2-Day pass buttons on `index.html`) goes to the Jotform at https://pci.jotform.com/form/263176564795068. The form also collects the waiver, medical info, and pass choice.
 - Private and group coaching bookings on `coaching.html` go through Acuity Scheduling (and Calendly for small groups). The "Pay Your Way" option takes Venmo, Cash App, and Zelle.
 - Google Analytics 4 Measurement ID is `G-MW5Z6PEV12`, installed in the `<head>` of both pages. A click listener at the end of each page sends `register_click`, `coaching_book_click` and `contact_click` events, and the coaching contact form sends `contact_submit`. Keep these when editing links, and never send names, emails or other personal details to Analytics.
