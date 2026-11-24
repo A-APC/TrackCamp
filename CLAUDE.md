@@ -21,6 +21,12 @@ Pick up here in a new session. Remove items as they're finished.
 - **Completed-registration tracking:** the owner is setting up a Zapier zap ("Send measurement events in Google Analytics 4 for new submissions in Jotform") with event name `registration_complete`. An alternative is a `thank-you.html` page on the site that Jotform redirects to.
 - **Privacy notice:** suggested a short footer note that the site uses Google Analytics.
 - **Marketing:** dates are set, so the next steps are the dates announcement, early access for past families, and Instagram posts (see the marketing plan).
+- **Search setup the owner must do:** verify the site in Google Search Console (add their verification meta tag to both pages' `<head>`, then submit `sitemap.xml`), and create a Google Business Profile.
+- **Service area:** the site says "Fresno, CA" (titles, descriptions, Location card note, structured data). This was assumed; confirm with the owner.
+
+## Search (SEO) setup
+
+Both pages have a title and meta description that name Fresno, CA, a canonical link, share tags (`og-camp.jpg`, `og-coaching.jpg`, 1200×630), favicons made from the owner's camp emblem (`emblem.svg`: gold track oval with a cross, color #C4A35A; the icons put it on a dark rounded square: `favicon.svg`, `favicon.ico`, `favicon-96.png`, `apple-touch-icon.png`), and a JSON-LD block in `<head>` (Organization + Person, plus an Event on `index.html` and a Service on `coaching.html`). `robots.txt` and `sitemap.xml` are at the root. When camp dates, times, location, prices or events change, update the visible page AND the JSON-LD and meta description to match, and bump `lastmod` in `sitemap.xml`. Keep titles under about 60 characters and descriptions under 160.
 
 ## How to make changes
 
