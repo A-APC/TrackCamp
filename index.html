@@ -189,6 +189,11 @@
     .camp-offer-item { display:flex; align-items:center; gap:.8rem; font-size:1.05rem; color:rgba(245,242,236,.75); }
     .camp-offer-icon { color:var(--gold); font-weight:700; flex-shrink:0; }
     .what-you-get { margin-top:2rem; background:rgba(212,168,32,.06); border:1px solid rgba(212,168,32,.25); padding:1.4rem 1.6rem; display:flex; flex-direction:column; gap:.75rem; }
+    .what-you-get .camp-offer-icon { width:1.5rem; text-align:center; }
+    .prize-list { list-style:none; margin:-.25rem 0 0 2.3rem; padding:0; display:flex; flex-direction:column; gap:.45rem; }
+    .prize-list li { position:relative; padding-left:1.1rem; font-size:.98rem; line-height:1.5; color:rgba(245,242,236,.75); }
+    .prize-list li::before { content:""; position:absolute; left:0; top:.62em; width:6px; height:6px; border-radius:50%; background:var(--gold); }
+    .prize-list strong { color:var(--white); font-weight:500; }
     .what-you-get-title { font-family:'Barlow Condensed',sans-serif; font-size:1.1rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); margin-bottom:.3rem; }
     .about-camps-details { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
     .camp-detail-card { background:var(--offblack); border:1px solid rgba(255,255,255,.06); padding:1.2rem 1.4rem; transition:border-color .2s; }
@@ -623,8 +628,15 @@
         </div>
         <div class="what-you-get">
           <div class="what-you-get-title">What You Get</div>
-          <div class="camp-offer-item"><span class="camp-offer-icon">🏆</span> A chance to <span style="color:var(--gold); font-weight:700; font-size:1.1rem;">WIN</span> a pair of spikes</div>
-          <div class="camp-offer-item"><span class="camp-offer-icon">✦</span> <strong> A Camp T-shirt</strong></div>
+          <div class="camp-offer-item"><span class="camp-offer-icon" aria-hidden="true">✦</span> <strong>Free Camp T-shirt</strong></div>
+          <div class="camp-offer-item"><span class="camp-offer-icon" aria-hidden="true">🏆</span> <span>A chance to <span style="color:var(--gold); font-weight:700; font-size:1.1rem;">WIN</span> a pair of spikes*</span></div>
+          <div class="camp-offer-item"><span class="camp-offer-icon" aria-hidden="true">🎁</span> <span>A chance to <span style="color:var(--gold); font-weight:700; font-size:1.1rem;">WIN</span> camp prizes:</span></div>
+          <ul class="prize-list">
+            <li><strong>$25–$80 gift cards</strong> to <span style="white-space:nowrap">Chick-fil-A</span>, Starbucks, or VS Athletics</li>
+            <li>Camp hoodie</li>
+            <li>Backpack</li>
+            <li>Camp beanie</li>
+          </ul>
         </div>
         <p style="font-size:.72rem; color:var(--muted); margin-top:.6rem; font-style:italic;">*Submission for spikes is only valid if you purchase the 2-day bundle.</p>
         <div class="camp-register-options">

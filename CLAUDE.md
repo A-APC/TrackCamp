@@ -15,7 +15,7 @@ The marketing plan lives in a private Claude doc, not in this repository: https:
 
 Pick up here in a new session. Remove items as they're finished.
 
-- **Prizes section (drafted, not live):** an Apple-style sideways-scrolling row of 5 prize cards (Gift Card, Camp Beanie, Hoodie, Backpack, Gift Card), saved in `drafts/prizes-section.html`. It goes in `index.html` directly before the "Your Host" section. Before publishing, the owner needs to give: how athletes win the prizes (the "daily games" line is a guess), the two gift card amounts, and optionally real photos to replace the gold icons. The `drafts/` folder is excluded from the website in `_config.yml`.
+- **Prizes section (drafted, not live):** an Apple-style sideways-scrolling row of 5 prize cards (Gift Card, Camp Beanie, Hoodie, Backpack, Gift Card), saved in `drafts/prizes-section.html`. It goes in `index.html` directly before the "Your Host" section. The prizes are now known (see "What You Get" in Business facts), so the draft's gift card cards should name the $25–$80 gift cards to Chick-fil-A, Starbucks or VS Athletics. Before publishing, the owner still needs to give: how athletes win the prizes (the "daily games" line is a guess), and optionally real photos to replace the gold icons. The `drafts/` folder is excluded from the website in `_config.yml`.
 - **Camp times and location:** not set yet; the Time and Location cards on `index.html` say TBA.
 - **Jotform:** consider adding the dates to the "How many days" question (Day 1: Fri Jan 8, Day 2: Sat Jan 9).
 - **Completed-registration tracking:** the owner is setting up a Zapier zap ("Send measurement events in Google Analytics 4 for new submissions in Jotform") with event name `registration_complete`. An alternative is a `thank-you.html` page on the site that Jotform redirects to.
@@ -43,6 +43,7 @@ Anything pushed to `main` goes live on the public site, so:
 - The only contact email is `elitepc.coaching@gmail.com`. Don't add any other address.
 - The first camp was 3 days. The upcoming camp is 2 days, Friday and Saturday, January 8–9, 2027, for ages 12–17. Camp times and location are not set yet (the Time and Location cards say TBA).
 - Each camp day has 4 parts, shown under "What to Expect": 1. Purpose of the Day (a Bible verse and theme, and how athletes should live it out), 2. Warmup, 3. 2 Rotating Event Stations, 4. Group Game & Day Recap. The verse card in step 1 shows Hebrews 12:1 as an example.
+- "What You Get" box on `index.html`: a free camp T-shirt for every athlete; a chance to win a pair of spikes (only with the 2-Day Bundle); and a chance to win camp prizes: $25–$80 gift cards to Chick-fil-A, Starbucks or VS Athletics, a camp hoodie, a backpack, or a camp beanie.
 - Events (2 stations a day): "Day 1: Rhythm and Technique" = Long Jump and Hurdles; "Day 2: Speed and Power" = Speed & Blocks (sprints) and Shot Put.
 - Camp registration (every Register button and the 1-Day/2-Day pass buttons on `index.html`) goes to the Jotform at https://pci.jotform.com/form/263176564795068. The form also collects the waiver, medical info, and pass choice.
 - Private and group coaching bookings on `coaching.html` go through Acuity Scheduling (and Calendly for small groups). The "Pay Your Way" option takes Venmo, Cash App, and Zelle.
