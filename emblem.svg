@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="3000" height="3000">
+  <!-- Front-of-shirt emblem: gold on transparent, pairs with the wordmark on the back -->
+  <!-- Track oval, now upright -->
+  <rect x="104" y="62" width="92" height="176" rx="46" fill="none" stroke="#C4A35A" stroke-width="10"/>
+  <!-- Inner lane line -->
+  <rect x="126" y="84" width="48" height="132" rx="24" fill="none" stroke="#C4A35A" stroke-width="3"/>
+  <!-- Latin cross at the center of the track: long upright, crossbar set high -->
+  <rect x="146" y="96" width="8" height="108" fill="#C4A35A"/>
+  <rect x="118" y="122" width="64" height="8" fill="#C4A35A"/>
+</svg>

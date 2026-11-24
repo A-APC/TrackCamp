@@ -26,7 +26,7 @@ Pick up here in a new session. Remove items as they're finished.
 
 ## Search (SEO) setup
 
-Both pages have a title and meta description that name Fresno, CA, a canonical link, share tags (`og-camp.jpg`, `og-coaching.jpg`, 1200×630), favicons (`favicon.ico`, `favicon-96.png`, `apple-touch-icon.png`), and a JSON-LD block in `<head>` (Organization + Person, plus an Event on `index.html` and a Service on `coaching.html`). `robots.txt` and `sitemap.xml` are at the root. When camp dates, times, location, prices or events change, update the visible page AND the JSON-LD and meta description to match, and bump `lastmod` in `sitemap.xml`. Keep titles under about 60 characters and descriptions under 160.
+Both pages have a title and meta description that name Fresno, CA, a canonical link, share tags (`og-camp.jpg`, `og-coaching.jpg`, 1200×630), favicons made from the owner's camp emblem (`emblem.svg`: gold track oval with a cross, color #C4A35A; the icons put it on a dark rounded square: `favicon.svg`, `favicon.ico`, `favicon-96.png`, `apple-touch-icon.png`), and a JSON-LD block in `<head>` (Organization + Person, plus an Event on `index.html` and a Service on `coaching.html`). `robots.txt` and `sitemap.xml` are at the root. When camp dates, times, location, prices or events change, update the visible page AND the JSON-LD and meta description to match, and bump `lastmod` in `sitemap.xml`. Keep titles under about 60 characters and descriptions under 160.
 
 ## How to make changes
 
