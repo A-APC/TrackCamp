@@ -474,6 +474,7 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-MW5Z6PEV12');
+    gtag('config', 'AW-18240482708');
   </script>
 </head>
 <body>
@@ -798,7 +799,10 @@
       if (!a) return;
       const href = a.getAttribute('href') || '';
       const label = a.textContent.replace('(opens in new tab)', '').trim().replace(/\s+/g, ' ');
-      if (href.includes('jotform.com/form/263176564795068')) gtag('event', 'register_click', { button_label: label });
+      if (href.includes('jotform.com/form/263176564795068')) {
+        gtag('event', 'register_click', { button_label: label });
+        gtag('event', 'conversion', { 'send_to': 'AW-18240482708/W8gdCM-fir8cEJTb3v1D', 'value': 1.0, 'currency': 'USD' });
+      }
       else if (href.includes('acuityscheduling.com') || href.includes('calendly.com')) gtag('event', 'coaching_book_click', { button_label: label });
       else if (href.startsWith('mailto:')) gtag('event', 'contact_click', { method: 'email' });
       else if (href.startsWith('tel:')) gtag('event', 'contact_click', { method: 'phone' });
