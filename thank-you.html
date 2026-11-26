@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>You're Registered! | The Everything Track Camp</title>
+  <meta name="robots" content="noindex, nofollow"/>
+  <link rel="icon" href="/favicon.ico" sizes="48x48"/>
+  <link rel="icon" type="image/png" href="/favicon-96.png" sizes="96x96"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --black:#0a0a0a; --offblack:#111111; --charcoal:#1c1c1c;
+      --gold:#d4a820; --white:#f5f2ec; --muted:#888880; --emblem:#C4A35A;
+    }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { background:var(--black); color:var(--white); font-family:'DM Sans',sans-serif; font-weight:300; min-height:100vh; display:flex; flex-direction:column; }
+    a:focus-visible { outline:2px solid var(--gold); outline-offset:3px; }
+    nav { padding:1.4rem 3rem; border-bottom:1px solid rgba(255,255,255,.06); }
+    .nav-logo { font-family:'Bebas Neue',sans-serif; font-size:1.4rem; letter-spacing:.12em; color:var(--gold); text-decoration:none; }
+    main { flex:1; display:flex; align-items:center; justify-content:center; padding:4rem 1.5rem; }
+    .card { max-width:620px; width:100%; text-align:center; }
+    .emblem { width:72px; height:auto; margin-bottom:1.6rem; }
+    .label { font-size:.75rem; letter-spacing:.26em; text-transform:uppercase; color:var(--gold); margin-bottom:.9rem; }
+    h1 { font-family:'Bebas Neue',sans-serif; font-weight:400; font-size:clamp(3.2rem,10vw,5.5rem); line-height:.95; letter-spacing:.02em; }
+    h1 span { color:var(--gold); }
+    .lead { margin-top:1.2rem; font-size:1.1rem; line-height:1.7; color:rgba(245,242,236,.75); }
+    .lead strong { color:var(--white); font-weight:500; }
+    .next { margin:2.4rem auto 0; text-align:left; background:rgba(212,168,32,.06); border:1px solid rgba(212,168,32,.25); padding:1.4rem 1.6rem; }
+    .next-title { font-family:'Barlow Condensed',sans-serif; font-size:1.1rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); margin-bottom:.8rem; }
+    .next ol { list-style:none; display:flex; flex-direction:column; gap:.7rem; counter-reset:step; }
+    .next li { counter-increment:step; position:relative; padding-left:2.1rem; font-size:1rem; line-height:1.6; color:rgba(245,242,236,.8); }
+    .next li::before { content:counter(step); position:absolute; left:0; top:.1rem; width:1.4rem; height:1.4rem; background:var(--gold); color:var(--black); font-family:'Bebas Neue',sans-serif; font-size:1rem; display:flex; align-items:center; justify-content:center; }
+    .next a { color:var(--gold); }
+    .actions { margin-top:2.2rem; display:flex; gap:.9rem; justify-content:center; flex-wrap:wrap; }
+    .btn-primary, .btn-ghost { font-family:'Barlow Condensed',sans-serif; font-size:1rem; letter-spacing:.14em; text-transform:uppercase; padding:.85rem 2rem; text-decoration:none; font-weight:600; transition:background .2s, border-color .2s, color .2s; }
+    .btn-primary { background:var(--gold); color:var(--black); }
+    .btn-primary:hover { background:#f0c030; }
+    .btn-ghost { color:var(--white); border:1px solid rgba(255,255,255,.25); }
+    .btn-ghost:hover { border-color:var(--gold); color:var(--gold); }
+    footer { padding:1.6rem 3rem; border-top:1px solid rgba(255,255,255,.06); font-size:.8rem; color:var(--muted); text-align:center; }
+    @media (max-width:600px) {
+      nav { padding:1.2rem 1.25rem; }
+      .btn-primary, .btn-ghost { width:100%; text-align:center; }
+      .next { padding:1.2rem 1.1rem; }
+    }
+  </style>
+  <!-- Google Analytics + Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MW5Z6PEV12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MW5Z6PEV12');
+    gtag('config', 'AW-18240482708');
+  </script>
+</head>
+<body>
+  <nav><a href="index.html" class="nav-logo">By: Caleb Foster</a></nav>
+
+  <main>
+    <div class="card">
+      <img class="emblem" src="emblem.svg" alt="" aria-hidden="true">
+      <p class="label">The Everything Track Camp</p>
+      <h1>You're <span>Registered!</span></h1>
+      <p class="lead">Thank you for signing up. We can't wait to see your athlete on the track <strong>Friday &amp; Saturday, January 8–9, 2027</strong>.</p>
+
+      <div class="next">
+        <div class="next-title">What happens next</div>
+        <ol>
+          <li>Watch your email for your registration confirmation and payment receipt.</li>
+          <li>Camp time and location are coming soon. We'll share them with registered families before camp.</li>
+          <li>Questions? Call or text <a href="tel:5597976168" style="white-space:nowrap">559-797-6168</a> or message us on <a href="https://instagram.com/Calebfosterr1" target="_blank" rel="noopener noreferrer">Instagram</a>.</li>
+        </ol>
+      </div>
+
+      <div class="actions">
+        <a href="index.html" class="btn-primary">Back to Camp Page</a>
+        <a href="coaching.html" class="btn-ghost">Private Coaching</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2026 Caleb Foster Elite Coaching</footer>
+
+  <script>
+    // Purchase tracking: runs once per registration when Jotform sends a family here after payment.
+    // Jotform can add these to the link: days (1 or 2), athletes (1-4), total (amount paid), sid (submission ID).
+    (function () {
+      var q = new URLSearchParams(location.search);
+      var firstNumber = function (v) { var m = (v || '').match(/\d+(\.\d+)?/); return m ? parseFloat(m[0]) : null; };
+      var days = firstNumber(q.get('days'));
+      var athletes = firstNumber(q.get('athletes')) || 1;
+      var total = firstNumber(q.get('total'));
+      var sid = q.get('sid') || '';
+      var price = days === 2 ? 120 : days === 1 ? 85 : null;
+      var value = total || (price ? price * athletes : null);
+
+      // Don't count the same registration twice if the page is refreshed
+      var key = 'etc_registration_sent_' + (sid || 'nosid');
+      try { if (sessionStorage.getItem(key)) return; } catch (e) {}
+
+      var details = { currency: 'USD' };
+      if (value) details.value = value;
+      if (sid) details.transaction_id = sid;
+
+      gtag('event', 'registration_complete', Object.assign({
+        pass: days === 2 ? '2 Day Bundle' : days === 1 ? '1 Day Pass' : 'unknown',
+        athletes: athletes
+      }, details));
+      gtag('event', 'conversion', Object.assign({ send_to: 'AW-18240482708/W8gdCM-fir8cEJTb3v1D' }, details));
+
+      try { sessionStorage.setItem(key, '1'); } catch (e) {}
+    })();
+
+    // Analytics: record clicks on booking and contact links (no personal details are sent)
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a');
+      if (!a) return;
+      var href = a.getAttribute('href') || '';
+      if (href.startsWith('tel:')) gtag('event', 'contact_click', { method: 'phone' });
+      else if (href.includes('instagram.com')) gtag('event', 'contact_click', { method: 'instagram' });
+    });
+  </script>
+</body>
+</html>
